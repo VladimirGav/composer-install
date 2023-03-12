@@ -12,7 +12,7 @@ $dirComposer = $backend.'/composer'; // Папка должна содержат
 
 // Устанавливаем Composer
 require_once $backend .'/installComposer.php';
-$installComposer = \installComposer::instance()->installComposer($dirComposer);
+$installComposer = \installComposer::instance()->installComposerGo($dirComposer);
 if(!empty($installComposer['error'])){
     echo '<pre>';
     print_r($installComposer);

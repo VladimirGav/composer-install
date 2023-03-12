@@ -28,7 +28,7 @@ class installComposer
      * @param int $secondsLimit - 15
      */
     public function installComposerStart($dirComposer, $requiresArr=[], $secondsLimit=15){
-        $installComposer = installComposer::instance()->installComposer($dirComposer, $requiresArr, $secondsLimit);
+        $installComposer = installComposer::instance()->installComposerGo($dirComposer, $requiresArr, $secondsLimit);
         if(!empty($installComposer['error'])){
             echo '<pre>';
             print_r($installComposer);
@@ -44,7 +44,7 @@ class installComposer
      * @param int $secondsLimit - 15
      * @return array
      */
-    public function installComposer($dirComposer, $requiresArr=[], $secondsLimit=15){
+    public function installComposerGo($dirComposer, $requiresArr=[], $secondsLimit=15){
         $dirComposer = str_replace('\\', "/", $dirComposer);
         $fileAutoload = $dirComposer.'/vendor/autoload.php';
         $fileJson = $dirComposer.'/composer.json';
