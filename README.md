@@ -11,4 +11,4 @@
 1. Запустить php файл в брауезере [installComposer.php](www/installComposer.php)
 
 ## Обновление Composer
-1. Запустить php файл в брауезере [updateComposer..php](www/updateComposer..php)
+1. Запустить php файл в брауезере [updateComposer.php](www/updateComposer.php)
